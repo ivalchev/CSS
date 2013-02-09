@@ -1,0 +1,61 @@
+$block: block;
+
+@mixin clearfix{
+  zoom:1;
+	&:after{
+	display:block; content:"";
+	height:0; clear:both; } }
+
+
+body
+{
+	height:680px;
+	width:700px;
+	
+	.thumbnail{
+		width:90px;
+		height:90px;
+		
+		&:hover{
+			width:90px;
+			height:90px;
+			border-radius:60px;
+		}
+	}
+
+	form {
+		
+		input[type="radio"]	{
+		display:none;
+							}
+		nav {
+			width:1080px;
+			margin:auto;
+				ul {
+					li {
+						list-style-type: none;
+						float: left;
+						margin:10px;
+						}
+						@include clearfix;
+					}
+			}
+			.images-container{
+				.image {
+				width:500px;
+				height:500px;
+				display:none;
+				border: 4px black solid;
+				border-radius:30px;
+				} 
+
+				input:checked + .image{
+				display:$block;
+				position:fixed;
+				margin-left:59px;
+
+				}
+			}
+
+		}
+}
