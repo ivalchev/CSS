@@ -1,0 +1,38 @@
+body {
+  height: 680px;
+  width: 700px; }
+  body .thumbnail {
+    width: 90px;
+    height: 90px; }
+    body .thumbnail:hover {
+      width: 90px;
+      height: 90px;
+      border-radius: 60px; }
+  body form input[type="radio"] {
+    display: none; }
+  body form nav {
+    width: 1080px;
+    margin: auto; }
+    body form nav ul {
+      zoom: 1; }
+      body form nav ul li {
+        list-style-type: none;
+        float: left;
+        margin: 10px; }
+      body form nav ul:after {
+        display: block;
+        content: "";
+        height: 0;
+        clear: both; }
+  body form .images-container .image {
+    width: 500px;
+    height: 500px;
+    display: none;
+    border: 4px black solid;
+    border-radius: 30px; }
+  body form .images-container input:checked + .image {
+    display: block;
+    position: fixed;
+    margin-left: 59px; }
+
+
