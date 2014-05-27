@@ -1,13 +1,16 @@
 body {
   height: 680px;
   width: 700px; }
+  
   body .thumbnail {
     width: 90px;
     height: 90px; }
+    
     body .thumbnail:hover {
       width: 90px;
       height: 90px;
       border-radius: 60px; }
+      
   body form input[type="radio"] {
     display: none; }
   body form nav {
@@ -24,6 +27,7 @@ body {
         content: "";
         height: 0;
         clear: both; }
+        
   body form .images-container .image {
     width: 500px;
     height: 500px;
